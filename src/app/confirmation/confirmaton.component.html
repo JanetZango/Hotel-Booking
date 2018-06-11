@@ -1,0 +1,26 @@
+<body>
+  <div>
+    <h1 style="color:white" id="menu" align="center">SUCESSFULLY BOOKED!</h1>
+    <br>
+    <br>
+    <br>
+    <div class="bg">
+      <div class="font" *ngFor="let booking of bookingsList">
+        <p>Firstname:{{ booking.firstname}}</p>
+        <p>Lastname:{{ booking.lastname}}</p>
+        <p>Email: {{ booking.email}}</p>
+        <p>PhoneNumber:{{ booking.phonenumber}}</p>
+        <p> Arrival date:{{ booking.arrival}}</p>
+        <p>Departure date:{{ booking.departure}}</p>
+        <p>Children: {{ booking.children}}</p>
+        <p>Adults: {{ booking.adults}}</p>
+
+      </div>
+    </div>
+
+  </div>
+  <button (click)="showStuff()">fdasfasfs</button>
+
+
+
+</body>

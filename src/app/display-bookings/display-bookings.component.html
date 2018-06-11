@@ -1,0 +1,44 @@
+
+<body>
+<h1 style="color:saddlebrown">Booking Form</h1>
+<img src="../../assets/rep.jpg">
+<div class="font">
+  First name:<br> 
+  <input type="text" #firstname placeholder="Firstname"  #firstname >
+  <br>
+  Last name:<br>
+  <input type="text" #lastname placeholder="lastname" #lastname >
+  <br>
+  Phone number:<br>
+  <input type="text" #phone placeholder="phonenumber" #phonenumber>
+  <br>
+  Email Address:<br>
+  <input type="text" #email placeholder="email" #email>
+  <br>
+  Arrival:<br>
+  <input type="date" #arrival placeholder="arrival" #arrivaldate>
+  <br>
+  Departure:<br>
+  <input type="date"  #departure placeholder="departure"  #departuredate>
+  <br>
+  Children:<br>
+  <input type="number" #children placeholder="Children" #children>
+  <br>
+  Adults:<br>
+  <input type="number" #adult placeholder="adults" #adults>  
+  <br>
+  <br>
+  <br>
+
+<button type="submit" routerLink='/confirmation' (click)="listb(firstname.value,lastname.value,phonenumber.value,email.value,arrivaldate.value,departuredate.value,children.value,adults.value)">Book</button>
+
+<div>
+ <ul *ngFor="let book of arr">
+    <li>
+    {{book.firstname}} , {{book.lastname}} , {{book.phonenumber}} , {{book.email}} , {{book.arrivaldate}} , {{book.departuredate}} , {{book.children}} , {{book.adults}}
+    </li>
+  </ul>
+</div>
+
+</div>
+</body>

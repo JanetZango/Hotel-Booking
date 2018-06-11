@@ -1,0 +1,18 @@
+
+
+.font{
+ color: white;
+ font-size:xx-large;
+ background: url('../../assets/aw.jpg');
+ background-attachment: fixed;
+ background-size:cover;
+ width: 1000px;
+ height:700px;
+
+ 
+}
+h1{
+    margin-right:50px;
+}
+
+

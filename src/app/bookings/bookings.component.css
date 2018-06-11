@@ -1,0 +1,22 @@
+body{
+    background :url("../../assets/hot.jpg");
+    }
+
+   a{
+        font-size: x-large;
+       color:black;
+    }
+    .image img{
+     margin-left: 800px;
+     margin-top: -1600px;
+     
+    }
+
+    .pic img{
+        margin-left: 800px;
+        margin-top: -1600px;
+        
+        }
+        img {
+            border-radius: 8px;
+        }
